@@ -8,13 +8,13 @@ DEFAULT COLLATE utf8_general_ci;
 
 -- exo 3
 
-CREATE DATABASE frameworks
+CREATE DATABASE IF NOT EXISTS frameworks
 DEFAULT CHARACTER SET utf8
 DEFAULT COLLATE utf8_general_ci;
 
 -- exo 4
 
-CREATE DATABASE languages
+CREATE DATABASE IF NOT EXISTS languages
 DEFAULT CHARACTER SET utf8
 DEFAULT COLLATE utf8_general_ci;
 
@@ -25,8 +25,8 @@ DROP DATABASE languages;
 
 -- exo 6
 
-DROP DATABASE frameworks;
+DROP DATABASE IF EXISTS frameworks;
 
 -- exo 7
 
-DROP DATABASE languages
+DROP DATABASE IF EXISTS languages;
